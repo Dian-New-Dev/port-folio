@@ -2,8 +2,8 @@ import React from "react";
 
 const App: React.FC = () => {
     return (
-        <div>
-            Olá
+        <div id="outer-wrapper" className="w-screen h-screen bg-gradiente">
+            
         </div>
     );
 }
