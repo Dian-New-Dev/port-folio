@@ -7,3 +7,32 @@
     box-sizing: border-box;
   
 }
+
+.bg-gradiente {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, #1d1d1d 0%, rgba(0,0,0,1) 100%);
+}
+
+.acme-regular {
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    font-family: "Oxanium", sans-serif;
+    color: #1ac1b1;
+    font-weight: 900;
+}
+
+.neon {
+    text-shadow: 0 0 10px #1ac1b1, /* Neon green glow */
+                 0 0 10px #1ac1b1, /* Larger glow */
+                 0 0 0px #1ac1b1; /* Even larger glow */
+}
+
+.neon:hover {
+    text-shadow: 0 0 20px #1ac1b1, /* Neon green glow */
+                 0 0 20px #1ac1b1, /* Larger glow */
+                 0 0 20px #1ac1b1; /* Even larger glow */
+}
