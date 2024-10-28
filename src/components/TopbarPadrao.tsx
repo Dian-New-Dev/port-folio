@@ -7,11 +7,12 @@ const TopbarPadrao: React.FC = () => {
             <div className="w-[40%]  flex items-start" id="logo">
                 <Logo />
             </div>
+            
             <div className="w-[60%] text-white flex justify-between " id="nav">
-                <a className="neon" href="">Início</a>
-                <a className="neon" href="">Sobre</a>
-                <a className="neon" href="">Projetos</a>
-                <a className="neon" href="">Contato</a>
+                <a className="neon" href="#A">Início</a>
+                <a className="neon" href="#B">Projetos</a>
+                <a className="neon" href="#C">Sobre</a>
+                <a className="neon" href="#D">Contato</a>
             </div>
         </div>
     );

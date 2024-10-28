@@ -8,6 +8,10 @@
   
 }
 
+html {
+    background-color: black;
+}
+
 .bg-gradiente {
     background: rgb(255,255,255);
     background: linear-gradient(90deg, #1d1d1d 0%, rgba(0,0,0,1) 100%);
@@ -19,10 +23,19 @@
     font-style: normal;
 }
 
-a {
+a, h4 {
     font-family: "Oxanium", sans-serif;
     color: #1ac1b1;
     font-weight: 900;
+}
+
+h1 {
+    font-family: "Roboto Condensed", serif;
+}
+
+p {
+    font-family: "Roboto", serif;
+
 }
 
 .neon {
@@ -35,4 +48,16 @@ a {
     text-shadow: 0 0 20px #1ac1b1, /* Neon green glow */
                  0 0 20px #1ac1b1, /* Larger glow */
                  0 0 20px #1ac1b1; /* Even larger glow */
+}
+
+.bg-blend-hero {
+    background-image: url('./assets/images/me.jpg');
+    background-size: cover;
+    background-color: #1ac1b1;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+}
+
+.sombra-hero {
+    box-shadow: 15px 15px 30px 5px #1ac1b1;
 }
