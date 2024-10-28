@@ -1,32 +1,30 @@
-# Passos
+# Portfolio
 
-1) npm add react-router-dom
+## Descrição
 
-2) fixar vulnerabilidades
+- Quarta versão da minha página de portfolio. A primeira era muito básica, a segunda tinha um design antiquado e a terceira não saiu do papel.
 
-3) criar pasta pages e colocar páginas individuais lá
+## Tech-stack
 
-4) import createBroswerRouter no arquivo principal
+- Vite 
+- React
+- Tailwind
+- Typescript
 
-5) const router = createBroswerRouter([]) para estabelecer rotas
+## Inspiração
 
-6) add routerprovided no import do createBroswerROuter
+- Design inspirado pelos seguintes templates:
+1) <a  target="_blank" href="https://i.pinimg.com/enabled_hi/1200x/f6/f2/82/f6f282669632157cb46e33ea7d8bf5be.jpg">Template 1</a>
+2) <a  target="_blank" href="https://i.pinimg.com/enabled_hi/1200x/e3/a6/65/e3a665de65e873779af293188a65be17.jpg">Template 2</a>
+3) <a  target="_blank" href="https://i.pinimg.com/736x/ac/b0/8b/acb08b2e95d9196a054f6c77a285ead0.jpg">Template 3</a>
 
-7) faz RouterProvider router={router} o entry point
+## A Implementar
 
-8) adiciona rotas no array
-
-const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <HomePage />
-    },
-    {
-        path: '/profiles', // url
-        element: <ProfilesPage /> //respectivo componente
-    }
-]);
-
-9) Faz componente de: errorElement: <div>404 Not Found</div>, abaixo de element: <HOmePage />
-
-10) 
+- Design moderno, com background escuro e cores neon para destaque do texto e imagens
+- Layout contínuo, sem divisões claras entre divs e seções
+- Indicador de status do projeto: idealização, desenvolvimento, deploy;
+- Divisão em duas categorias: projetos pessoais e contribuições (open-source).
+- Projetos pessoais divididos entre: landing pages, aplicações web, jogos, elementos.
+- Seção projeto atual: o que estou fazendo no momento, com link para repositório.
+- Livefeed da minha janela de desenvolvimento na página.
+- Link para currículo.
