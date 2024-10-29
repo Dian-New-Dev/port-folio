@@ -1,19 +1,17 @@
 import React from "react";
 import Header from "./components/Header";
-import Teste from "./components/Teste";
 import Hero from "./components/Hero";
+import Projetos from "./components/Projetos";
 
 const App: React.FC = () => {
 
-    const teste:boolean = false;
-
     return (
-        <div id="outer-wrapper" className="w-screen h-screen bg-black">
-            {!teste && <Header />}
+        <div id="outer-wrapper" className="p-12 flex flex-col gap-16 w-full h-full bg-black">
+            <Header />
 
-            {!teste && <Hero />}
+            <Hero />
 
-            {teste && <Teste />}
+            <Projetos />
         </div>
     );
 }
