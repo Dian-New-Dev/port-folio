@@ -14,7 +14,7 @@ const Portfolio: React.FC = () => {
                     prática: o aprender por fazer.
                 </h3>
 
-                <div className="bg-[black] rounded-lg p-8 gap-16 flex overflow-x-auto snap-mandatory snap-x">
+                <div className="bg-[black] rounded-lg p-8 gap-16 flex no-scrollbar overflow-x-auto snap-mandatory snap-x">
                     {projetos.map((item:projetos, index:number) => (
                         <div key={index} className="bg-[|] p-4 sombra-portfolio rounded-lg snap-center flex items-center gap-8 min-w-full">
 

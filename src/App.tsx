@@ -20,9 +20,11 @@ const App: React.FC = () => {
 
             <Sobre />
 
-            <div className="absolute bottom-0 left-0 w-full mb-[-350px]">
+            <div className="z-20 absolute bottom-0 left-0 w-full mb-[-350px]">
                 <Footer />
             </div>
+
+          
         </div>
     );
 }
