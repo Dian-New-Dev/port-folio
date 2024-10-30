@@ -3,12 +3,6 @@ import projetos from "../data/projetos";
 
 const Portfolio: React.FC = () => {
 
-    function checarLink(link:string) {
-        if (link === 'N') {
-            console.log('link não disponivel')
-        }
-    }
-
     return (
         <div className="text-white">
             <div className="flex flex-col items-center gap-8 w-full" id="hero-texto">

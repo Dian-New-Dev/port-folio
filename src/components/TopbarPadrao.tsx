@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 const TopbarPadrao: React.FC = () => {
     return (
-        <div className="flex items-center  p-12">
+        <div className="flex items-center bg-black/[90%] px-12 z-50">
             <div className="w-[40%]  flex items-start" id="logo">
                 <Logo />
             </div>

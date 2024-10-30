@@ -67,3 +67,17 @@ p {
     box-shadow: 15px 15px 15px 3px #1ac1b1;
 
 }
+
+.codigo-bg {
+    background-image: url('./assets/images/codigo-bg.png');
+    background-color: rgba(0, 0, 0, 0.575);
+   background-blend-mode: multiply;
+    background-position: -50% -150%;
+    background-size: 200%;
+}
+
+.neon-sobre {
+    text-shadow: 0 0 10px #1ac1b1, /* Neon green glow */
+                 0 0 10px #1ac1b1, /* Larger glow */
+                 0 0 0px #1ac1b1; /* Even larger glow */
+}

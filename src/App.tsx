@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Princípios from "./components/Principios";
 import Portfolio from "./components/Portfolio";
+import Sobre from "./components/Sobre";
 
 const App: React.FC = () => {
 
@@ -15,6 +16,8 @@ const App: React.FC = () => {
             <Princípios />
 
             <Portfolio />
+
+            <Sobre />
         </div>
     );
 }

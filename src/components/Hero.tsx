@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero: React.FC = () => {
     return (
-        <div id="hero" className="text-white mt-64 w-full">
+        <div id="hero" className="text-white mt-64 w-full z-10">
             <div className="flex gap-4 w-full items-center">
                 <div className="flex flex-col gap-8 w-[60%]" id="hero-texto">
                     <h4 className="mb-[-5px]">Na luta</h4>
