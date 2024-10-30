@@ -62,3 +62,8 @@ p {
 .sombra-hero {
     box-shadow: 15px 15px 30px 5px #1ac1b1;
 }
+
+.sombra-portfolio {
+    box-shadow: 15px 15px 15px 3px #1ac1b1;
+
+}

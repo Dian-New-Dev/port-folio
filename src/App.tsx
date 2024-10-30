@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Projetos from "./components/Projetos";
+import Princípios from "./components/Principios";
+import Portfolio from "./components/Portfolio";
 
 const App: React.FC = () => {
 
@@ -11,7 +12,9 @@ const App: React.FC = () => {
 
             <Hero />
 
-            <Projetos />
+            <Princípios />
+
+            <Portfolio />
         </div>
     );
 }

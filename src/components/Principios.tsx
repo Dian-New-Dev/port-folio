@@ -1,6 +1,6 @@
 import React from "react";
 
-const Projetos: React.FC = () => {
+const Principios: React.FC = () => {
     return (
         <div className="text-center text-white">
             <div className="flex flex-col items-center gap-8 w-full" id="hero-texto">
@@ -49,4 +49,4 @@ const Projetos: React.FC = () => {
     );
 }
 
-export default Projetos;
+export default Principios;
