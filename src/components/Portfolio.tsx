@@ -84,8 +84,8 @@ const Portfolio: React.FC = () => {
                 </div>
                 
                 
-                <button onClick={() => clicouSeta("esq")} className="text-5xl neon text-[#1ac1b1] absolute bottom-0 font-bold origin-center scale-[2] left-0">←</button>
-                <button onClick={() => clicouSeta("dir")} className="text-5xl neon text-[#1ac1b1] absolute bottom-0 font-bold origin-center scale-[2] right-0">→</button>
+                <button onClick={() => clicouSeta("esq")} className="text-5xl neon text-[#1ac1b1] absolute bottom-[-30px] left-[30px] sm:left-0 font-bold origin-center scale-[2] ">←</button>
+                <button onClick={() => clicouSeta("dir")} className="text-5xl neon text-[#1ac1b1] absolute bottom-[-30px] right-[30px] sm:right-0 font-bold origin-center scale-[2] ">→</button>
             </div>
         </div>
 

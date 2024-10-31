@@ -64,7 +64,7 @@ p {
 }
 
 .sombra-portfolio {
-    box-shadow: 15px 15px 15px 3px #1ac1b1;
+    box-shadow: 10px 10px 15px 5px #1ac1b1;
 
 }
 
@@ -123,4 +123,16 @@ p {
 
 .hamburguer-transition {
     transition: left 0.7s ease;
+}
+
+.central-absoluto-esq {
+    left: 35%;
+    transform: translateX(-50%);
+    transform: scale(2);
+}
+
+.central-absoluto-dir {
+    left: 55%;
+    transform: translateX(-50%);
+    transform: scale(2);
 }
