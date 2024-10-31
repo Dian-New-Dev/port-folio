@@ -1,11 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import projetos from "../data/projetos";
 
 const Portfolio: React.FC = () => {
 
+    const [scroll, setScroll] = useState<HTMLElement | null>()
+    useEffect(() => {
+        const horizontalDiv = document.getElementById('horizontal-scroller') as HTMLElement | null;
+        setScroll(horizontalDiv)
+    }, [])
+
+    function clicouSeta(direcao:string) {
+        if (direcao === 'esq') {
+            if (scroll) {
+                console.log('indo pra esquerda')
+                scroll.scrollBy({
+                    left: -50,
+                    behavior: 'smooth'
+                });
+            }
+
+        } else {
+            if (scroll) {
+                console.log('indo pra direita')
+                scroll.scrollBy({
+                    left: 50,
+                    behavior: 'smooth'
+                });
+            }
+
+        }   
+    }
+
     return (
         <div id="portfolio" className="scroll-mt-[100px] text-white">
-            <div className="flex flex-col items-center gap-8 w-full" id="hero-texto">
+            <div className="relative flex flex-col items-center gap-8 w-full" id="hero-texto">
                 <h4 className="mb-[-10px]">Portfolio</h4>
                 <h2 className="text-2xl sm:text-5xl">Cada projeto, uma jornada</h2>
                 <div className="border border-[#1ac1b1]/50 w-[15%]"></div>
@@ -14,7 +42,7 @@ const Portfolio: React.FC = () => {
                     prática: o aprender por fazer.
                 </h3>
 
-                <div className="bg-[black] rounded-lg p-2 sm:p-8 gap-16 flex sm:no-scrollbar overflow-x-auto w-full md:w-auto snap-mandatory snap-x">
+                <div id="horizontal-scroller" className="bg-[black] relative rounded-lg p-2 sm:p-8 gap-16 flex sm:no-scrollbar overflow-x-auto w-full md:w-auto snap-mandatory snap-x">
                     {projetos.map((item:projetos, index:number) => (
                         <div key={index} className="bg-[|] p-4 sombra-portfolio rounded-lg snap-center flex flex-col md:flex-row items-center gap-4 sm:gap-8 min-w-full">
 
@@ -52,7 +80,12 @@ const Portfolio: React.FC = () => {
                         </div>
                     ))}
 
+                    
+                    
+
                 </div>
+                <button onClick={() => clicouSeta("esq")} className="text-5xl bg-green-500 absolute bottom-0 left-0">←</button>
+                    <button onClick={() => clicouSeta("dir")} className="text-5xl bg-green-500 absolute bottom-0 right-0">→</button>
             </div>
         </div>
 

@@ -9,7 +9,6 @@ const Header: React.FC = () => {
 
     useEffect(() => {
         function definirFormatodoHeader() {
-            console.log('esta função aconteceu!: ' + document.documentElement.clientWidth)
             if (document.documentElement.clientWidth < 639) {
                 setAbriuNoMobile(true);
             } else {
