@@ -12,7 +12,6 @@ const Portfolio: React.FC = () => {
     function clicouSeta(direcao:string) {
         if (direcao === 'esq') {
             if (scroll) {
-                console.log('indo pra esquerda')
                 scroll.scrollBy({
                     left: -50,
                     behavior: 'smooth'
@@ -21,7 +20,6 @@ const Portfolio: React.FC = () => {
 
         } else {
             if (scroll) {
-                console.log('indo pra direita')
                 scroll.scrollBy({
                     left: 50,
                     behavior: 'smooth'
@@ -84,8 +82,10 @@ const Portfolio: React.FC = () => {
                     
 
                 </div>
-                <button onClick={() => clicouSeta("esq")} className="text-5xl bg-green-500 absolute bottom-0 left-0">←</button>
-                    <button onClick={() => clicouSeta("dir")} className="text-5xl bg-green-500 absolute bottom-0 right-0">→</button>
+                
+                
+                <button onClick={() => clicouSeta("esq")} className="text-5xl neon text-[#1ac1b1] absolute bottom-0 font-bold origin-center scale-[2] left-0">←</button>
+                <button onClick={() => clicouSeta("dir")} className="text-5xl neon text-[#1ac1b1] absolute bottom-0 font-bold origin-center scale-[2] right-0">→</button>
             </div>
         </div>
 
