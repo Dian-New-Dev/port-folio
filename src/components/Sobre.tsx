@@ -2,13 +2,13 @@ import React from "react";
 
 const Sobre: React.FC = () => {
     return (
-        <div id="hero" className="text-white w-full">
-            <div className="relative codigo-bg w-full flex flex-row gap-4 items-center">
+        <div id="sobre" className="scroll-mt-[100px] text-white w-full mb-[200px] ">
+            <div className="relative codigo-bg w-full flex flex-col sm:flex-row gap-4 items-center">
                 <div className="z-10 absolute left-0 top-0 w-full h-full bg-gradient-to-l from-transparent via-black to-black"></div>
                 
-                <div className="z-20 flex flex-col gap-8 w-[60%]" id="hero-texto">
+                <div className="z-20 flex flex-col gap-8 w-full text-center sm:text-left items-center sm:w-[60%]" id="hero-texto">
                     <h4 className="mb-[-5px]">Sobre</h4>
-                    <h2 className="text-5xl">
+                    <h2 className="text-2xl sm:text-5xltext-5xl">
                         Quem sou eu
                     </h2>
 

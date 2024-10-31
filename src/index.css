@@ -106,3 +106,21 @@ p {
         scrollbar-width: none;  /* Firefox */
   }
 }
+
+.transicao-opacidade {
+    transition: opacity 0.7s ease;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.808) 50%);
+}
+
+.nao-opaco {
+    opacity: 1;
+
+}
+
+.opaco {
+    opacity: 0;
+}
+
+.hamburguer-transition {
+    transition: left 0.7s ease;
+}

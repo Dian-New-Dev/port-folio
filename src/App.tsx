@@ -9,23 +9,29 @@ import Footer from "./components/Footer";
 const App: React.FC = () => {
 
     return (
-        <div id="outer-wrapper" className="relative p-12 flex flex-col mx-auto gap-64 w-full max-w-[1440px] h-full bg-black">
-            <Header />
+        <div className='grid place-items-center gradient-hero'>
+            <div className='scroll-smooth p-4 sm:p-16 relative flex flex-col gap-16 w-full max-w-[1440px] z-20 overflow-hidden'>
+                <Header />
 
-            <Hero />
+                <Hero />
 
-            <Princípios />
+                <Princípios />
 
-            <Portfolio />
+                <Portfolio />
 
-            <Sobre />
+                <Sobre />
 
-            <div className="z-20 absolute bottom-0 left-0 w-full mb-[-350px]">
-                <Footer />
+                <div id="contato" className="scroll-mt-[100px] z-20 absolute bottom-0 left-0 w-full mt-[-400px]">
+                    <Footer />
+                </div>
+            
             </div>
+        
+        </div>
+
+
 
           
-        </div>
     );
 }
 

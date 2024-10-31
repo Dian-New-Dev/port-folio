@@ -4,25 +4,25 @@ import projetos from "../data/projetos";
 const Portfolio: React.FC = () => {
 
     return (
-        <div className="text-white">
+        <div id="portfolio" className="scroll-mt-[100px] text-white">
             <div className="flex flex-col items-center gap-8 w-full" id="hero-texto">
                 <h4 className="mb-[-10px]">Portfolio</h4>
-                <h2 className="text-5xl">Cada projeto, uma jornada</h2>
+                <h2 className="text-2xl sm:text-5xl">Cada projeto, uma jornada</h2>
                 <div className="border border-[#1ac1b1]/50 w-[15%]"></div>
-                <h3>
+                <h3 className="text-center sm:text-left">
                     Munido dos princípios supramencionados, busco orientar meu aprendizado a uma abordagem
                     prática: o aprender por fazer.
                 </h3>
 
-                <div className="bg-[black] rounded-lg p-8 gap-16 flex no-scrollbar overflow-x-auto snap-mandatory snap-x">
+                <div className="bg-[black] rounded-lg p-2 sm:p-8 gap-16 flex sm:no-scrollbar overflow-x-auto w-full md:w-auto snap-mandatory snap-x">
                     {projetos.map((item:projetos, index:number) => (
-                        <div key={index} className="bg-[|] p-4 sombra-portfolio rounded-lg snap-center flex items-center gap-8 min-w-full">
+                        <div key={index} className="bg-[|] p-4 sombra-portfolio rounded-lg snap-center flex flex-col md:flex-row items-center gap-4 sm:gap-8 min-w-full">
 
-                            <div className="w-[60%] rounded-lg">
+                            <div className="w-full md:w-[60%] rounded-lg">
                                 <img className="rounded-lg" src={item.thumbnail} alt="Thumbnail" />
                             </div>
 
-                            <div className="w-[40%] flex flex-col gap-2">
+                            <div className="w-full md:w-[40%] flex flex-col gap-2">
                                 <h3 className="text-3xl font-bold">{item.nome}</h3>
                                 <div className="border border-[#1ac1b1] w-[40%]"></div>
                                 <p className="text-sm text-gray-300"><b className="text-lg text-white">Descrição: </b>{item.descricao}</p>

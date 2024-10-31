@@ -1,18 +1,46 @@
-import React, { useState } from "react";
-import TopbarPadrao from "./TopbarPadrao";
-import TopbarMobile from "./TopbarMobile";
+import React, { useState, useEffect } from 'react';
+import HeaderDesktop from './HeaderDesktop';
+import HeaderMobile from './HeaderMobile';
 
 const Header: React.FC = () => {
 
-    const [abriuMobile, setAbriuMobile] = useState<boolean>(false)
+    const [abriuNoMobile, setAbriuNoMobile] = useState<boolean>(false);
+    const [larguraDaTela, setLarguraDaTela] = useState<number>(document.documentElement.clientWidth)
+
+    useEffect(() => {
+        function definirFormatodoHeader() {
+            console.log('esta função aconteceu!: ' + document.documentElement.clientWidth)
+            if (document.documentElement.clientWidth < 639) {
+                setAbriuNoMobile(true);
+            } else {
+                setAbriuNoMobile(false)
+            }
+            setLarguraDaTela(document.documentElement.clientWidth)  
+        }
+
+        //chama a função na primeira renderização, equivale a um "onload"
+        definirFormatodoHeader();
+
+        //chama a função se o viewport tiver o tamanho alterado
+        window.addEventListener('resize', definirFormatodoHeader);
+
+        //limpa o listener (não sei pq é necessáriom mas é)
+        return () => {
+            window.removeEventListener('resize', definirFormatodoHeader)
+        }
+        
+    }, []); 
+
+
 
     return (
-        <div className="w-full fixed top-0 left-0 z-50">
-            {!abriuMobile && <TopbarPadrao />}
-
-            {abriuMobile && <TopbarMobile />}
+        <div>
+            {abriuNoMobile ? <HeaderMobile larguraDaTela={larguraDaTela} /> : <HeaderDesktop />}
         </div>
+
+
     );
-}
+};
 
 export default Header;
+
