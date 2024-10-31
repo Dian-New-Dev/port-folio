@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero: React.FC = () => {
     return (
-        <div id="inicio" className="scroll-mt-[200px] text-white mt-16 w-full z-10">
+        <div id="inicio" className="scroll-mt-[200px] text-white mt-16 2xl:mt-[-64px] w-full z-10">
             <div className="flex flex-col sm:flex-row gap-4 w-full items-center">
                 <div className="flex flex-col gap-8 w-full items-center sm:items-start sm:w-[60%]" id="hero-texto">
                     <h4 className="mb-[-5px]">Na luta</h4>

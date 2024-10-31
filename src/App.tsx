@@ -10,7 +10,7 @@ const App: React.FC = () => {
 
     return (
         <div className='grid place-items-center gradient-hero'>
-            <div className='scroll-smooth p-4 sm:p-16 relative flex flex-col gap-16 w-full max-w-[1440px] z-20 overflow-hidden'>
+            <div className='scroll-smooth p-4 sm:p-16 relative flex flex-col gap-16 2xl:gap-64 w-full max-w-[1440px] z-20 overflow-hidden'>
                 <Header />
 
                 <Hero />
