@@ -136,3 +136,29 @@ p {
     transform: translateX(-50%);
     transform: scale(2);
 }
+
+.formato-circulo {
+    clip-path: circle(50% at 50% 50%);
+}
+
+@keyframes descer {
+    0% {top: 0%}
+    100% {top: 110%}
+}
+
+.desce-anim {
+    animation-name: descer;
+    animation-duration: 55s;
+    
+}
+
+@keyframes virar-d {
+    0% {left: 0%}
+    100% {left: 110%}
+}
+
+.virard-anim {
+    animation-name: virar-d;
+    animation-duration: 55s;
+    
+}
