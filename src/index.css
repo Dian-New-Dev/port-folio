@@ -162,3 +162,32 @@ p {
     animation-duration: 55s;
     
 }
+
+@keyframes meteor {
+    0% {
+        transform: rotate(270deg) translate(0);
+        opacity: 1
+    }
+
+    70% {
+        opacity: 1
+    }
+
+    to {
+        transform: rotate(270deg) translate(-3000px);
+        opacity: 0
+    }
+}
+
+.animate-meteor-effect {
+    top: 0;
+    animation-delay: 0.737596s;
+    animation-duration: 6s;
+    z-index: -1;
+    animation-delay: 0.737596s;
+    animation-iteration-count: infinite;
+    animation-name: meteor;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+
