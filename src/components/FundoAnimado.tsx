@@ -3,19 +3,19 @@ import React, { useState } from "react";
 const FundoAnimado: React.FC = () => {
 
     const [descer, setDescer] = useState<boolean>()
-    const [top, setTop] = useState<number>(0)
-    const [left, setLeft] = useState<number>(0)
+    const [top] = useState<number>(0)
+    //const [left] = useState<number>(0)
 
 
-        setInterval(() => {
+        // setInterval(() => {
             
-            const numero = Math.floor(Math.random() * 2)
-            if (numero === 0) {
+        //     const numero = Math.floor(Math.random() * 2)
+        //     if (numero === 0) {
                 
-            } else {
+        //     } else {
 
-            }
-        }, 2000);
+        //     }
+        // }, 2000);
 
         function ligardesce() {
             if (descer) {
