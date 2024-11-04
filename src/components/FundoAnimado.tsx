@@ -30,11 +30,12 @@ const FundoAnimado: React.FC = () => {
 
         
         <div className="relative w-full h-full overflow-hidden">
-                <button className="absolute z-50 text-white top-52" onClick={ligardesce}>Ligar</button>
+                <button className="hidden absolute z-50 text-white top-52" onClick={ligardesce}>Ligar</button>
                 
                 
                 <div className={`
                     absolute
+                    hidden
                     ${descer ? 'desce-anim' : ''}
                     
                     animate-pulse formato-circulo  bg-[#1ac1b1]/[1] w-20 h-20 border]`}

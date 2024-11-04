@@ -71,13 +71,13 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela} ) => {
 
                     <div 
                     id='part-menu'
-                    className={`absolute border w-full h-full bg-red-200/50`}
-                    style={{ left: leftP, width: widthP }} 
+                    className={`z-0 absolute w-full h-full`}
+                    style={{ left:(leftP - 10), width: (widthP + 10) }} 
                     >
-                    
+                        <span className=' h-2 w-2 bg-[#1ac1b1]/50 absolute anim-menu'></span>
                     </div>
                 
-                <div className='relative w-3/4 flex gap-8 justify-end items-center'>
+                <div className='z-10 relative w-3/4 flex gap-8 justify-end items-center'>
 
 
                     <a id='link1' className='neon' href="#inicio">Início</a>

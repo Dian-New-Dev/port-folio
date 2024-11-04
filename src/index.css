@@ -140,7 +140,24 @@ p {
 /* particula menu */
 
 .formato-circulo {
-    clip-path: circle(50% at 50% 50%);
+    
+}
+
+@keyframes menu-anim {
+    0% {left: 0%}
+    100% {left: 100%}
+}
+
+.anim-menu {
+    
+    top: 40%;
+    animation-name: menu-anim;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    box-shadow: 1px 1px 15px 4px #1ac1b1;
+
 }
 
 /* meteoro */
