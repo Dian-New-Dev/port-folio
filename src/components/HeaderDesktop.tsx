@@ -11,7 +11,6 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela} ) => {
 
     useEffect(() => {
         const seRolarScroll = () => {
-            mapearElementos();
             if (window.scrollY > 50) {
                 setRolouScroll(true);
             } else {
@@ -39,16 +38,13 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela} ) => {
         const rectLink1 = link1!.getBoundingClientRect();
         console.log(rectLink1.left)
         const rectLinkUltimo = linkUltimo!.getBoundingClientRect();
-        setLeftP(Math.floor(larguraDaTela) - Math.floor(rectLink1.left))
-        setWidthP(rectLinkUltimo.right - rectLink1.left)
+
+        if (larguraDaTela && rectLink1.left && rectLinkUltimo.right) {
+            setLeftP(Math.floor(larguraDaTela) - Math.floor(rectLink1.left))
+            setWidthP(rectLinkUltimo.right - rectLink1.left)
+        }
 
     }, [larguraDaTela])
-
-    useEffect(() => {
-        console.log(leftP)
-        console.log(widthP)
-
-    }, [leftP, widthP])
     
     
 
@@ -72,7 +68,12 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela} ) => {
                     <div 
                     id='part-menu'
                     className={`z-0 absolute w-full h-full`}
-                    style={{ left:(leftP - 10), width: (widthP + 10) }} 
+                    style={{ 
+
+                        left:leftP !== undefined ? (leftP - 10) : 0, 
+                        width:widthP !== undefined ? (widthP + 10) : 0 
+                    
+                    }} 
                     >
                         <span className=' h-2 w-2 bg-[#1ac1b1]/50 absolute anim-menu'></span>
                     </div>
