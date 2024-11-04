@@ -20,11 +20,11 @@
 
 ## A Implementar
 
-- Design moderno, com background escuro e cores neon para destaque do texto e imagens
-- Layout contínuo, sem divisões claras entre divs e seções
-- Indicador de status do projeto: idealização, desenvolvimento, deploy;
+- ~~Design moderno, com background escuro e cores neon para destaque do texto e imagens~~
+- ~~Layout contínuo, sem divisões claras entre divs e seções~~
+- ~~Indicador de status do projeto: idealização, desenvolvimento, deploy;~~
 - Divisão em duas categorias: projetos pessoais e contribuições (open-source).
-- Projetos pessoais divididos entre: landing pages, aplicações web, jogos, elementos.
+- ~~Projetos pessoais divididos entre: landing pages, aplicações web, jogos, elementos.~~
 - Seção projeto atual: o que estou fazendo no momento, com link para repositório.
 - Livefeed da minha janela de desenvolvimento na página.
 - Link para currículo.

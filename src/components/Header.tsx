@@ -34,7 +34,7 @@ const Header: React.FC = () => {
 
     return (
         <div>
-            {abriuNoMobile ? <HeaderMobile larguraDaTela={larguraDaTela} /> : <HeaderDesktop />}
+            {abriuNoMobile ? <HeaderMobile larguraDaTela={larguraDaTela} /> : <HeaderDesktop larguraDaTela={larguraDaTela} />}
         </div>
 
 

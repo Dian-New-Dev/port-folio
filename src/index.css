@@ -6,7 +6,7 @@
     min-width: 0;
     box-sizing: border-box;
     /* border: 1px solid yellow; */
-  
+
 }
 
 html {
@@ -137,31 +137,13 @@ p {
     transform: scale(2);
 }
 
+/* particula menu */
+
 .formato-circulo {
     clip-path: circle(50% at 50% 50%);
 }
 
-@keyframes descer {
-    0% {top: 0%}
-    100% {top: 110%}
-}
-
-.desce-anim {
-    animation-name: descer;
-    animation-duration: 55s;
-    
-}
-
-@keyframes virar-d {
-    0% {left: 0%}
-    100% {left: 110%}
-}
-
-.virard-anim {
-    animation-name: virar-d;
-    animation-duration: 55s;
-    
-}
+/* meteoro */
 
 @keyframes meteor {
     0% {

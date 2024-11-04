@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
 
-const HeaderDesktop: React.FC = () => {
+interface HeaderDesktopProps {
+    larguraDaTela: number;
+}
+
+const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela} ) => {
 
     const [rolouScroll, setRolouScroll] = useState(false);
 
     useEffect(() => {
         const seRolarScroll = () => {
+            mapearElementos();
             if (window.scrollY > 50) {
                 setRolouScroll(true);
             } else {
@@ -23,6 +28,38 @@ const HeaderDesktop: React.FC = () => {
 
     }, []);
 
+    //logica para animação atrás dos links
+    
+    
+    const [leftP, setLeftP] = useState<number>();
+    const [widthP, setWidthP] = useState<number>();
+    useEffect(() => {
+        const link1 = document.getElementById('link1')
+        const linkUltimo = document.getElementById('linkUltimo')
+        const rectLink1 = link1!.getBoundingClientRect();
+        console.log(rectLink1.left)
+        const rectLinkUltimo = linkUltimo!.getBoundingClientRect();
+        setLeftP(Math.floor(larguraDaTela) - Math.floor(rectLink1.left))
+        setWidthP(rectLinkUltimo.right - rectLink1.left)
+
+    }, [larguraDaTela])
+
+    useEffect(() => {
+        console.log(leftP)
+        console.log(widthP)
+
+    }, [leftP, widthP])
+    
+    
+
+
+
+
+
+
+
+    
+
     return (
         <div className='relative w-full'>
             <div className='z-50 fixed flex items-cente px-12 lg:px-28 2xl:px-48  w-full top-0 left-0 text-sky-100 pt-4'>
@@ -30,13 +67,24 @@ const HeaderDesktop: React.FC = () => {
                 <div className='w-1/4'>
                     <Logo />
                 </div>
+
+
+                    <div 
+                    id='part-menu'
+                    className={`absolute border w-full h-full bg-red-200/50`}
+                    style={{ left: leftP, width: widthP }} 
+                    >
+                    
+                    </div>
                 
-                <div className='w-3/4 flex gap-8 justify-end items-center'>
-                    <a className='neon' href="#inicio">Início</a>
+                <div className='relative w-3/4 flex gap-8 justify-end items-center'>
+
+
+                    <a id='link1' className='neon' href="#inicio">Início</a>
                     <a className='neon' href="#principios">Princípios</a>
                     <a className='neon' href="#portfolio">Portfolio</a>
                     <a className='neon' href="#sobre">Sobre</a>
-                    <a className='neon' href="#contato">Contato</a>
+                    <a id='linkUltimo' className='neon' href="#contato">Contato</a>
 
                 </div>
 

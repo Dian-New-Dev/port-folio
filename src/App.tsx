@@ -9,7 +9,7 @@ import FundoAnimado from "./components/FundoAnimado";
 
 const App: React.FC = () => {
 
-    const mostrarFundoAnimado:boolean = false;
+    const mostrarFundoAnimado:boolean = true;
 
     return (
         <div className='relative grid place-items-center gradient-hero'>
