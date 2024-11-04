@@ -29,7 +29,7 @@ const projetos:projetos[] = [
         status: 'Pronto, aguardando deploy.',
         tecnologias: 'Vite, React, React Router, Tailwdind, Typescript, NodeJS, Express, MongoDB.',
         repositorio: 'https://github.com/Dian-New-Dev/mini-blog',
-        link: 'N',
+        link: 'https://infinita-tenebrae.onrender.com/',
     },
     {
         nome: 'O Vigésimo',
