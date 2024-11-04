@@ -26,7 +26,7 @@ const projetos:projetos[] = [
         descricao: 'Blog full-stack com temática cósmica.',
         thumbnail: './assets/thumbnails/infinita.png',
         categoria: 'Web App',
-        status: 'Pronto, aguardando deploy.',
+        status: 'Deployed.',
         tecnologias: 'Vite, React, React Router, Tailwdind, Typescript, NodeJS, Express, MongoDB.',
         repositorio: 'https://github.com/Dian-New-Dev/mini-blog',
         link: 'https://infinita-tenebrae.onrender.com/',
