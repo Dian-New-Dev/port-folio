@@ -1,4 +1,4 @@
-interface projetos {
+interface projetosEN {
     nome: string;
     descricao: string;
     thumbnail: string;
@@ -10,10 +10,10 @@ interface projetos {
 
 }
 
-const projetos:projetos[] = [
+const projetosEN:projetosEN[] = [
     {
-        nome: 'Galeria de Landing Pages',
-        descricao: 'Landing Page onde reúno links para todas as landing pages produzidas por mim.',
+        nome: 'Landing Page Gallery',
+        descricao: 'Landing Page where I reunite links for all other LPs made by me.',
         thumbnail: './assets/thumbnails/lps.png',
         categoria: 'Landing Page.',
         tecnologias: 'Vite, React, Tailwdind, Typescript.',
@@ -23,7 +23,7 @@ const projetos:projetos[] = [
     },
     {
         nome: 'Infinita Tenebrae',
-        descricao: 'Blog full-stack com temática cósmica.',
+        descricao: 'Full-stack blog with a cosmic theme.',
         thumbnail: './assets/thumbnails/infinita.png',
         categoria: 'Web App',
         status: 'Deployed.',
@@ -32,8 +32,8 @@ const projetos:projetos[] = [
         link: 'https://infinita-tenebrae.onrender.com/',
     },
     {
-        nome: 'O Vigésimo',
-        descricao: 'Jogo de navegador.',
+        nome: 'The Twentieth',
+        descricao: 'Browser game.',
         thumbnail: './assets/thumbnails/vigesimo.png',
         categoria: 'Web App',
         status: 'Deployed.',
@@ -44,4 +44,4 @@ const projetos:projetos[] = [
 
 ]
 
-export default projetos;
+export default projetosEN;

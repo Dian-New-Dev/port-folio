@@ -3,10 +3,13 @@ import Logo from './Logo';
 
 interface HeaderDesktopProps {
     larguraDaTela: number;
+    idioma: number;
+    setIdioma: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela} ) => {
+const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela, idioma, setIdioma} ) => {
 
+    //logica para aplicar sombrear se scroll
     const [rolouScroll, setRolouScroll] = useState(false);
 
     useEffect(() => {
@@ -45,56 +48,114 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela} ) => {
         }
 
     }, [larguraDaTela])
+
+    //logica para trocar idioma
+    function trocarIdioma(numero:number) {
+        if (numero === 0) {
+            setIdioma(0)
+        } else {
+            setIdioma(1)
+        }
+    }
     
-    
-
-
-
-
-
-
-
-    
-
     return (
-        <div className='relative w-full'>
-            <div className='z-50 fixed flex items-cente px-12 lg:px-28 2xl:px-48  w-full top-0 left-0 text-sky-100 pt-4'>
+        <>
+        {idioma === 0 ?
+            <div id='headerDesktop-pt' className='relative w-full'>
+                <div className='z-50 fixed flex items-cente px-12 lg:px-28 2xl:px-48  w-full top-0 left-0 text-sky-100 pt-4'>
 
-                <div className='w-1/4'>
-                    <Logo />
+                    <div className='w-1/4'>
+                        <Logo />
+                    </div>
+
+
+                        <div 
+                        id='part-menu'
+                        className={`hidden z-0 absolute w-full h-full`}
+                        style={{ 
+
+                            left:leftP !== undefined ? (leftP - 10) : 0, 
+                            width:widthP !== undefined ? (widthP + 10) : 0 
+                        
+                        }} 
+                        >
+                            <span className=' h-2 w-2 bg-[#1ac1b1]/50 absolute anim-menu'></span>
+                        </div>
+                    
+                    <div className='z-10 relative w-3/4 flex gap-8 justify-end items-center'>
+
+                        <button onClick={() => trocarIdioma(0)}>
+                            <img className='rounded-lg w-[40px]' src={`/assets/icons/brasil.png`} alt="Botão com a bandeira do Brasil." />
+                        </button>
+
+                        <button onClick={() => trocarIdioma(1)}>
+                            <img className='rounded-lg w-[40px]' src={`/assets/icons/eua.png`} alt="Botão com a bandeira dos EUA." />
+                        </button>
+
+                        <a id='link1' className='neon' href="#inicio">Início</a>
+                        <a className='neon' href="#principios">Princípios</a>
+                        <a className='neon' href="#portfolio">Portfolio</a>
+                        <a className='neon' href="#sobre">Sobre</a>
+                        <a id='linkUltimo' className='neon' href="#contato">Contato</a>
+
+                    </div>
+
                 </div>
 
-
-                    <div 
-                    id='part-menu'
-                    className={`hidden z-0 absolute w-full h-full`}
-                    style={{ 
-
-                        left:leftP !== undefined ? (leftP - 10) : 0, 
-                        width:widthP !== undefined ? (widthP + 10) : 0 
-                    
-                    }} 
-                    >
-                        <span className=' h-2 w-2 bg-[#1ac1b1]/50 absolute anim-menu'></span>
-                    </div>
-                
-                <div className='z-10 relative w-3/4 flex gap-8 justify-end items-center'>
-
-
-                    <a id='link1' className='neon' href="#inicio">Início</a>
-                    <a className='neon' href="#principios">Princípios</a>
-                    <a className='neon' href="#portfolio">Portfolio</a>
-                    <a className='neon' href="#sobre">Sobre</a>
-                    <a id='linkUltimo' className='neon' href="#contato">Contato</a>
-
+                <div className={`z-40 fixed flex items-center px-12 w-full top-0 left-0 text-sky-100 pt-4 transicao-opacidade h-24 ${rolouScroll ? 'nao-opaco' : 'opaco'}`}>
                 </div>
 
             </div>
+        :
+        <div id='headerDesktop-en' className='relative w-full'>
+        <div className='z-50 fixed flex items-cente px-12 lg:px-28 2xl:px-48  w-full top-0 left-0 text-sky-100 pt-4'>
 
-            <div className={`z-40 fixed flex items-center px-12 w-full top-0 left-0 text-sky-100 pt-4 transicao-opacidade h-24 ${rolouScroll ? 'nao-opaco' : 'opaco'}`}>
+            <div className='w-1/4'>
+                <Logo />
+            </div>
+
+
+                <div 
+                id='part-menu'
+                className={`hidden z-0 absolute w-full h-full`}
+                style={{ 
+
+                    left:leftP !== undefined ? (leftP - 10) : 0, 
+                    width:widthP !== undefined ? (widthP + 10) : 0 
+                
+                }} 
+                >
+                    <span className=' h-2 w-2 bg-[#1ac1b1]/50 absolute anim-menu'></span>
+                </div>
+            
+            <div className='z-10 relative w-3/4 flex gap-8 justify-end items-center'>
+
+                        <button onClick={() => trocarIdioma(0)}>
+                            <img className='rounded-lg w-[40px]' src={`/assets/icons/brasil.png`} alt="Button with the Brazilian flag." />
+                        </button>
+
+                        <button onClick={() => trocarIdioma(1)}>
+                            <img className='rounded-lg w-[40px]' src={`/assets/icons/eua.png`} alt="Button with the American flag." />
+                        </button>
+                
+                
+                <a id='link1' className='neon' href="#inicio">Home</a>
+                <a className='neon' href="#principios">Principles</a>
+                <a className='neon' href="#portfolio">Portfolio</a>
+                <a className='neon' href="#sobre">About</a>
+                <a id='linkUltimo' className='neon' href="#contato">Contact</a>
+
             </div>
 
         </div>
+
+        <div className={`z-40 fixed flex items-center px-12 w-full top-0 left-0 text-sky-100 pt-4 transicao-opacidade h-24 ${rolouScroll ? 'nao-opaco' : 'opaco'}`}>
+        </div>
+
+    </div>
+
+        }
+        </>
     );
 };
 
