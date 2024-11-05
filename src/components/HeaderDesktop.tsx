@@ -39,7 +39,6 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela, idioma, se
         const link1 = document.getElementById('link1')
         const linkUltimo = document.getElementById('linkUltimo')
         const rectLink1 = link1!.getBoundingClientRect();
-        console.log(rectLink1.left)
         const rectLinkUltimo = linkUltimo!.getBoundingClientRect();
 
         if (larguraDaTela && rectLink1.left && rectLinkUltimo.right) {
@@ -84,13 +83,15 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela, idioma, se
                     
                     <div className='z-10 relative w-3/4 flex gap-8 justify-end items-center'>
 
-                        <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(0)}>
-                            <img className='rounded-lg w-[30px]' src={`./assets/icons/brasil.png`} alt="Botão com a bandeira do Brasil." />
-                        </button>
+                        <div className='flex gap-1'>
+                            <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(0)}>
+                                <img className='rounded-lg w-[30px]' src={`./assets/icons/brasil.png`} alt="Botão com a bandeira do Brasil." />
+                            </button>
 
-                        <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
-                            <img className='rounded-lg w-[30px]' src={`./assets/icons/eua.png`} alt="Botão com a bandeira dos EUA." />
-                        </button>
+                            <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
+                                <img className='rounded-lg w-[30px]' src={`./assets/icons/eua.png`} alt="Botão com a bandeira dos EUA." />
+                            </button> 
+                        </div>
 
                         <a id='link1' className='neon' href="#inicio">Início</a>
                         <a className='neon' href="#principios">Princípios</a>
@@ -129,14 +130,15 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela, idioma, se
                 </div>
             
             <div className='z-10 relative w-3/4 flex gap-8 justify-end items-center'>
+                        <div className='flex gap-1'>
+                            <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(0)}>
+                                <img className='rounded-lg w-[30px]' src={`./assets/icons/brasil.png`} alt="Button with the Brazilian flag." />
+                            </button>
 
-                        <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(0)}>
-                            <img className='rounded-lg w-[30px]' src={`./assets/icons/brasil.png`} alt="Button with the Brazilian flag." />
-                        </button>
-
-                        <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
-                            <img className='rounded-lg w-[30px]' src={`./assets/icons/eua.png`} alt="Button with the American flag." />
-                        </button>
+                            <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
+                                <img className='rounded-lg w-[30px]' src={`./assets/icons/eua.png`} alt="Button with the American flag." />
+                            </button>
+                        </div>
                 
                 
                 <a id='link1' className='neon' href="#inicio">Home</a>
