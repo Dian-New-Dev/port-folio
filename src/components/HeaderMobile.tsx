@@ -49,11 +49,11 @@ const HeaderMobile: React.FC<HeaderMobileProps> = ({ larguraDaTela, idioma, setI
 
                     <div className='absolute header-central w-flex gap-1'>
                         <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(0)}>
-                            <img className='rounded-lg w-[30px]' src={`./assets/icons/brasil.png`} alt="Button with the Brazilian flag." />
+                            <img className='rounded-lg w-[30px]' src={`./assets/icons/brasil.png`} alt="Botão com a bandeira brasileira." />
                         </button>
 
                         <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
-                            <img className='rounded-lg w-[30px]' src={`./assets/icons/eua.png`} alt="Button with the American flag." />
+                            <img className='rounded-lg w-[30px]' src={`./assets/icons/uk.png`} alt="Botão com a bandeira britânica." />
                         </button>
                     </div>
                     
@@ -90,7 +90,7 @@ const HeaderMobile: React.FC<HeaderMobileProps> = ({ larguraDaTela, idioma, setI
                     </button>
 
                     <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
-                        <img className='rounded-lg w-[30px]' src={`./assets/icons/eua.png`} alt="Button with the American flag." />
+                        <img className='rounded-lg w-[30px]' src={`./assets/icons/uk.png`} alt="Button with the American flag." />
                     </button>
                 </div>
 

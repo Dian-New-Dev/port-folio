@@ -89,7 +89,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela, idioma, se
                             </button>
 
                             <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
-                                <img className='rounded-lg w-[30px]' src={`./assets/icons/eua.png`} alt="Botão com a bandeira dos EUA." />
+                                <img className='rounded-lg w-[30px]' src={`./assets/icons/uk.png`} alt="Botão com a bandeira do Reino Unido." />
                             </button> 
                         </div>
 
@@ -136,7 +136,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela, idioma, se
                             </button>
 
                             <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
-                                <img className='rounded-lg w-[30px]' src={`./assets/icons/eua.png`} alt="Button with the American flag." />
+                                <img className='rounded-lg w-[30px]' src={`./assets/icons/uk.png`} alt="Button with the British flag." />
                             </button>
                         </div>
                 
