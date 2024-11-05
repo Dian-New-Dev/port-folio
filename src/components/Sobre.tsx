@@ -28,10 +28,10 @@ const Sobre: React.FC = () => {
 
                     <div className="border border-[#1ac1b1]/50 w-[15%]"></div>
                     <div className="flex flex-col gap-1">
-                        <p className="text-center">
+                        <p className="leading-7 text-center">
                             Ex-docente universitário em Ciência Política, doutor em Ciência Política pela UFRGS.
                         </p>
-                        <p className="text-center">
+                        <p className="leading-7 text-center">
                             Problemas de saúde me forçaram a abandonar o mundo acadêmico, desafio que abraço como oportunidade de buscar uma transição de carreira, rumo ao desenvolvimento web.
                         </p>
                     </div>
@@ -40,21 +40,21 @@ const Sobre: React.FC = () => {
                         <div className="flex flex-col gap-1">
                             <button onClick={() => renderizarPrincipio(1)} className="neon-sobre font-normal text-[#1ac1b1]">Diferencial</button>
                             <div className={`${mostrar === 1 ? 'block' : 'hidden'}`}>
-                                <p className="pl-4 italic text-center">Maturidade e capazidade de pesquisa e aprendizado autodidata contínuos advindos do mundo acadêmico.</p>
+                                <p className="leading-7 pl-4 italic text-center">Maturidade e capazidade de pesquisa e aprendizado autodidata contínuos advindos do mundo acadêmico.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-col gap-1">
                             <button onClick={() => renderizarPrincipio(2)} className="neon-sobre font-normal text-[#1ac1b1]">Modus Operandi</button>
                             <div className={`${mostrar === 2 ? 'block' : 'hidden'}`}>
-                                <p className="pl-4 italic text-center">Aliar aprendizado teórico (estudos de documentaçao, práticas tutoriais) com experiência prática (99Freelas, serviços autônomos locais) como preparo para uma vaga junior.</p>
+                                <p className="leading-7 pl-4 italic text-center">Aliar aprendizado teórico (estudos de documentaçao, práticas tutoriais) com experiência prática (99Freelas, serviços autônomos locais) como preparo para uma vaga junior.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-col gap-1">
                             <button onClick={() => renderizarPrincipio(3)} className="neon-sobre font-normal text-[#1ac1b1]">Lema</button>
                             <div className={`${mostrar === 3 ? 'block' : 'hidden'}`}>
-                                <p className="pl-4 italic text-center">Sintaxe se aprende em dias, lógica se absorve em meses, pensamento crítico e resolutivo se desenvolve continuamente e humildade para aprender se cultiva todos os dias.</p>
+                                <p className="leading-7 pl-4 italic text-center">Sintaxe se aprende em dias, lógica se absorve em meses, pensamento crítico e resolutivo se desenvolve continuamente e humildade para aprender se cultiva todos os dias.</p>
                             </div>
                         </div>
                     </div>

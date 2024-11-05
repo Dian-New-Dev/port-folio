@@ -10,7 +10,7 @@ const Logo: React.FC = () => {
                     </div>
                     <div className='flex flex-col w-full '>
                         <div className='h-20 '>
-                        <p className='acme-regular neon text-[100px] mt-[-33px]'>A</p>
+                        <p className='acme-regular  neon text-[100px] mt-[-33px]'>A</p>
                         </div>
                         <div className=''>
                             <p className='acme-regular neon pl-2'>Web Dev</p>

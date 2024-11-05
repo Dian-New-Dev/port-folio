@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
 
                     <div className="border border-[#1ac1b1]/50 w-[15%]"></div>
 
-                    <p className="text-center sm:text-left">Bem-vindo ao meu portfolio. Lhe
+                    <p className="leading-7 text-center sm:text-left">Bem-vindo ao meu portfolio. Lhe
                         apresento em alguns minutos um panorama de meus projetos,
                         um pouco sobre mim e meus dados de contato. 
                     </p>
