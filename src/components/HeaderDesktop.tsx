@@ -85,11 +85,11 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela, idioma, se
                     <div className='z-10 relative w-3/4 flex gap-8 justify-end items-center'>
 
                         <button onClick={() => trocarIdioma(0)}>
-                            <img className='rounded-lg w-[40px]' src={`/assets/icons/brasil.png`} alt="Botão com a bandeira do Brasil." />
+                            <img className='rounded-lg w-[40px]' src={`./assets/icons/brasil.png`} alt="Botão com a bandeira do Brasil." />
                         </button>
 
                         <button onClick={() => trocarIdioma(1)}>
-                            <img className='rounded-lg w-[40px]' src={`/assets/icons/eua.png`} alt="Botão com a bandeira dos EUA." />
+                            <img className='rounded-lg w-[40px]' src={`./assets/icons/eua.png`} alt="Botão com a bandeira dos EUA." />
                         </button>
 
                         <a id='link1' className='neon' href="#inicio">Início</a>
@@ -131,11 +131,11 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela, idioma, se
             <div className='z-10 relative w-3/4 flex gap-8 justify-end items-center'>
 
                         <button onClick={() => trocarIdioma(0)}>
-                            <img className='rounded-lg w-[40px]' src={`/assets/icons/brasil.png`} alt="Button with the Brazilian flag." />
+                            <img className='rounded-lg w-[40px]' src={`./assets/icons/brasil.png`} alt="Button with the Brazilian flag." />
                         </button>
 
                         <button onClick={() => trocarIdioma(1)}>
-                            <img className='rounded-lg w-[40px]' src={`/assets/icons/eua.png`} alt="Button with the American flag." />
+                            <img className='rounded-lg w-[40px]' src={`./assets/icons/eua.png`} alt="Button with the American flag." />
                         </button>
                 
                 
