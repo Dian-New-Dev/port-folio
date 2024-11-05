@@ -67,7 +67,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela} ) => {
 
                     <div 
                     id='part-menu'
-                    className={`z-0 absolute w-full h-full`}
+                    className={`hidden z-0 absolute w-full h-full`}
                     style={{ 
 
                         left:leftP !== undefined ? (leftP - 10) : 0, 

@@ -9,6 +9,10 @@
 
 }
 
+p {
+    line-height: 30px;
+}
+
 html {
     background-color: black;
 }
@@ -59,12 +63,32 @@ p {
     background-repeat: no-repeat;
 }
 
-.sombra-hero {
-    box-shadow: 15px 15px 30px 5px #1ac1b1;
+@keyframes hero-sombra {
+    0% {box-shadow: 15px 15px 30px 5px #1ac1b1}
+    100% {box-shadow: 20px 20px 20px 10px #1ac1b1}
+
 }
 
+.sombra-hero {
+    animation-name: hero-sombra;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes portfolio-sombra {
+    0% {    box-shadow: 10px 10px 15px 5px #1ac1b1}
+    100% {box-shadow: 10px 10px 20px 10px #1ac1b1}
+
+}
+
+
 .sombra-portfolio {
-    box-shadow: 10px 10px 15px 5px #1ac1b1;
+    animation-name: portfolio-sombra;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 
 }
 
@@ -80,6 +104,14 @@ p {
     text-shadow: 0 0 10px #1ac1b1, /* Neon green glow */
                  0 0 10px #1ac1b1, /* Larger glow */
                  0 0 0px #1ac1b1; /* Even larger glow */
+}
+
+.neon-sobre:hover {
+    text-shadow: 0 0 20px #1ac1b1, /* Neon green glow */
+                 0 0 20px #1ac1b1, /* Larger glow */
+                 5px 5px 10px #1ac1b1; /* Even larger glow */
+    transform: scale(1.02) ;
+    text-decoration: underline;               
 }
 
 .footer-gradiente {
