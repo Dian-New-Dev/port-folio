@@ -47,13 +47,13 @@ const HeaderMobile: React.FC<HeaderMobileProps> = ({ larguraDaTela, idioma, setI
 
                     <img className='z-50 w-[40px]' src={`./assets/images/logo.jpg`} alt="Logo da empresa" />
 
-                    <div className='absolute header-central w-flex'>
-                        <button onClick={() => trocarIdioma(0)}>
-                            <img className='rounded-lg w-[40px]' src={`./assets/icons/brasil.png`} alt="Button with the Brazilian flag." />
+                    <div className='absolute header-central w-flex gap-1'>
+                        <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(0)}>
+                            <img className='rounded-lg w-[30px]' src={`./assets/icons/brasil.png`} alt="Button with the Brazilian flag." />
                         </button>
 
-                        <button onClick={() => trocarIdioma(1)}>
-                            <img className='rounded-lg w-[40px]' src={`./assets/icons/eua.png`} alt="Button with the American flag." />
+                        <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
+                            <img className='rounded-lg w-[30px]' src={`./assets/icons/eua.png`} alt="Button with the American flag." />
                         </button>
                     </div>
                     
@@ -84,13 +84,13 @@ const HeaderMobile: React.FC<HeaderMobileProps> = ({ larguraDaTela, idioma, setI
 
                 <img className='z-50 w-[40px]' src={`./assets/images/logo.jpg`} alt="Logo da empresa" />
 
-                <div className='absolute header-central w-flex'>
-                    <button onClick={() => trocarIdioma(0)}>
-                        <img className='rounded-lg w-[40px]' src={`./assets/icons/brasil.png`} alt="Button with the Brazilian flag." />
+                <div className='absolute header-central w-flex gap-1'>
+                    <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(0)}>
+                        <img className='rounded-lg w-[30px]' src={`./assets/icons/brasil.png`} alt="Button with the Brazilian flag." />
                     </button>
 
-                    <button onClick={() => trocarIdioma(1)}>
-                        <img className='rounded-lg w-[40px]' src={`./assets/icons/eua.png`} alt="Button with the American flag." />
+                    <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
+                        <img className='rounded-lg w-[30px]' src={`./assets/icons/eua.png`} alt="Button with the American flag." />
                     </button>
                 </div>
 
