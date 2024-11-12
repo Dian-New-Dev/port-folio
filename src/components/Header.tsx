@@ -9,6 +9,8 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ idioma, setIdioma}) => {
 
+    
+    
     const [abriuNoMobile, setAbriuNoMobile] = useState<boolean>(false);
     const [larguraDaTela, setLarguraDaTela] = useState<number>(document.documentElement.clientWidth)
 
