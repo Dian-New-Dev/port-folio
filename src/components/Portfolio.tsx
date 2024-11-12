@@ -37,7 +37,7 @@ const Portfolio: React.FC<PortfolioProps> = ({idioma}) => {
     return (
         <>
         {idioma === 0 ? 
-            <div id="portfolio-pt" className="scroll-mt-[100px] text-white">
+            <div id="portfolio" className="scroll-mt-[100px] text-white">
                 <div className="relative flex flex-col items-center gap-8 w-full" id="hero-texto">
                     <h4 className="mb-[-10px]">Portfolio</h4>
                     <h2 className="text-2xl sm:text-5xl">Cada projeto, uma jornada</h2>
@@ -97,7 +97,7 @@ const Portfolio: React.FC<PortfolioProps> = ({idioma}) => {
             </div>
         
             :
-            <div id="portfolio-en" className="scroll-mt-[100px] text-white">
+            <div id="portfolio" className="scroll-mt-[100px] text-white">
                 <div className="relative flex flex-col items-center gap-8 w-full" id="hero-texto">
                     <h4 className="mb-[-10px]">Portfolio</h4>
                     <h2 className="text-2xl sm:text-5xl">Each project, a new journey</h2>

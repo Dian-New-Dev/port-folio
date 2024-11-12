@@ -8,7 +8,7 @@ const Hero: React.FC<HeroProps> = ({idioma}) => {
     return (
         <>
         {idioma === 0 ?
-            <div id="inicio-pt" className="scroll-mt-[200px] text-white mt-16 2xl:mt-[-64px] w-full z-10">
+            <div id="inicio" className="scroll-mt-[200px] text-white mt-16 2xl:mt-[-64px] w-full z-10">
                 <div className="flex flex-col sm:flex-row gap-4 w-full items-center">
                     <div className="flex flex-col gap-8 w-full items-center sm:items-start sm:w-[60%]" id="hero-texto">
                         <h4 className="mb-[-5px]">Na luta</h4>
@@ -32,7 +32,7 @@ const Hero: React.FC<HeroProps> = ({idioma}) => {
             </div>
             
             :
-            <div id="inicio-en" className="scroll-mt-[200px] text-white mt-16 2xl:mt-[-64px] w-full z-10">
+            <div id="inicio" className="scroll-mt-[200px] text-white mt-16 2xl:mt-[-64px] w-full z-10">
                 <div className="flex flex-col sm:flex-row gap-4 w-full items-center">
                     <div className="flex flex-col gap-8 w-full items-center sm:items-start sm:w-[60%]" id="hero-texto">
                         <h4 className="mb-[-5px]">On the grind</h4>

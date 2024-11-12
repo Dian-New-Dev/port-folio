@@ -22,7 +22,7 @@ const Sobre: React.FC<SobreProps> = ({idioma}) => {
     return (
         <>
             {idioma === 0 ?
-                <div id="sobre-pt" className="scroll-mt-[100px] text-white w-full mb-[200px] ">
+                <div id="sobre" className="scroll-mt-[100px] text-white w-full mb-[200px] ">
                     <div className="relative codigo-bg w-full flex flex-col sm:flex-row gap-4 items-center">
                         <div className="z-10 absolute left-0 top-0 w-full h-full bg-gradient-to-l from-transparent via-black to-black"></div>
                         
@@ -73,7 +73,7 @@ const Sobre: React.FC<SobreProps> = ({idioma}) => {
                     </div>
                 </div>
                 :
-                <div id="sobre-pt" className="scroll-mt-[100px] text-white w-full mb-[200px] ">
+                <div id="sobre" className="scroll-mt-[100px] text-white w-full mb-[200px] ">
                     <div className="relative codigo-bg w-full flex flex-col sm:flex-row gap-4 items-center">
                         <div className="z-10 absolute left-0 top-0 w-full h-full bg-gradient-to-l from-transparent via-black to-black"></div>
                         

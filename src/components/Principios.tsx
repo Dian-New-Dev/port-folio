@@ -9,7 +9,7 @@ const Principios: React.FC<PrincipiosProps> = ({idioma}) => {
     return (
         <>
         {idioma === 0 ?
-            <div id="principios-pt" className="scroll-mt-[100px] text-center text-white">
+            <div id="principios" className="scroll-mt-[100px] text-center text-white">
                 <div className="flex flex-col items-center gap-8 w-full" id="hero-texto">
                     <h4 className="mb-[-10px]">Projetos</h4>
                     <h2 className="text-2xl sm:text-5xl">O que desenvolvo</h2>
@@ -53,7 +53,7 @@ const Principios: React.FC<PrincipiosProps> = ({idioma}) => {
                 </div>
             </div>
         :
-            <div id="principios-en" className="scroll-mt-[100px] text-center text-white">
+            <div id="principios" className="scroll-mt-[100px] text-center text-white">
                 <div className="flex flex-col items-center gap-8 w-full" id="hero-texto">
                     <h4 className="mb-[-10px]">Projects</h4>
                     <h2 className="text-2xl sm:text-5xl">What I Develop</h2>
