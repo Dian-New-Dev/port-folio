@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
 import brasilIcon from '../assets/icons/brasil.png';
+import ukIcon from '../assets/icons/uk.png';
 
 interface HeaderDesktopProps {
     larguraDaTela: number;
@@ -90,7 +91,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela, idioma, se
                             </button>
 
                             <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
-                                <img className='rounded-lg w-[30px]' src={`./assets/icons/uk.png`} alt="Botão com a bandeira do Reino Unido." />
+                                <img className='rounded-lg w-[30px]' src={ukIcon} alt="Botão com a bandeira do Reino Unido." />
                             </button> 
                         </div>
 
@@ -137,7 +138,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela, idioma, se
                             </button>
 
                             <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
-                                <img className='rounded-lg w-[30px]' src={`./assets/icons/uk.png`} alt="Button with the British flag." />
+                                <img className='rounded-lg w-[30px]' src={ukIcon} alt="Button with the British flag." />
                             </button>
                         </div>
                 

@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import brasilIcon from '../assets/icons/brasil.png';
+import ukIcon from '../assets/icons/uk.png';
+import logoImg from '../assets/images/logo.jpg'
 
 interface HeaderMobileProps {
     larguraDaTela: number;
@@ -45,15 +48,15 @@ const HeaderMobile: React.FC<HeaderMobileProps> = ({ larguraDaTela, idioma, setI
                         <div className='z-50 w-8 h-0.5 bg-[#1ac1b1]'></div>
                     </button>
 
-                    <img className='z-50 w-[40px]' src={`./assets/images/logo.jpg`} alt="Logo da empresa" />
+                    <img className='z-50 w-[40px]' src={logoImg} alt="Logo da empresa" />
 
                     <div className='absolute header-central w-flex gap-1'>
                         <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(0)}>
-                            <img className='rounded-lg w-[30px]' src={`./assets/icons/brasil.png`} alt="Botão com a bandeira brasileira." />
+                            <img className='rounded-lg w-[30px]' src={brasilIcon} alt="Botão com a bandeira brasileira." />
                         </button>
 
                         <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
-                            <img className='rounded-lg w-[30px]' src={`./assets/icons/uk.png`} alt="Botão com a bandeira britânica." />
+                            <img className='rounded-lg w-[30px]' src={ukIcon} alt="Botão com a bandeira britânica." />
                         </button>
                     </div>
                     
@@ -82,15 +85,15 @@ const HeaderMobile: React.FC<HeaderMobileProps> = ({ larguraDaTela, idioma, setI
                     <div className='z-50 w-8 h-0.5 bg-[#1ac1b1]'></div>
                 </button>
 
-                <img className='z-50 w-[40px]' src={`./assets/images/logo.jpg`} alt="Logo da empresa" />
+                <img className='z-50 w-[40px]' src={logoImg} alt="Logo da empresa" />
 
                 <div className='absolute header-central w-flex gap-1'>
                     <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(0)}>
-                        <img className='rounded-lg w-[30px]' src={`./assets/icons/brasil.png`} alt="Button with the Brazilian flag." />
+                        <img className='rounded-lg w-[30px]' src={brasilIcon} alt="Button with the Brazilian flag." />
                     </button>
 
                     <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
-                        <img className='rounded-lg w-[30px]' src={`./assets/icons/uk.png`} alt="Button with the American flag." />
+                        <img className='rounded-lg w-[30px]' src={ukIcon} alt="Button with the American flag." />
                     </button>
                 </div>
 
