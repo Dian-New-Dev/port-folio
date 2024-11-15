@@ -1,4 +1,8 @@
 import React from "react";
+import isoIcon from '../assets/icons/iso.png'
+import brickWallIcon from '../assets/icons/brickwall.png'
+import machineLearningIcon from '../assets/icons/machine-learning.png'
+import ideaIcon from '../assets/icons/idea.png'
 
 interface PrincipiosProps {
     idioma: number;
@@ -18,7 +22,7 @@ const Principios: React.FC<PrincipiosProps> = ({idioma}) => {
                     <div className="flex flex-col sm:flex-row w-full max-w-[1024px] items-center sm:items-stretch gap-2 lg:gap-8">
                         <div className="gap-2 rounded-md hover:scale-[1.1] hover:border border-gray-600/50 bg-[#141414] sm:mt-12 w-[75%] sm:w-1/4 h-full p-4 flex flex-col items-center justify-center">
                             <div className="w-full  h-[90%] flex flex-col items-center gap-3">
-                                <img className="w-[50px]" src={`./assets/icons/iso.png`} alt="Ícone de uma medalha com a sigla 'ISO'." />
+                                <img className="w-[50px]" src={isoIcon} alt="Ícone de uma medalha com a sigla 'ISO'." />
                                 <h4 className="font-bold text-lg text-white">Padrões de Mercado</h4>
                                 <p className="text-sm">Priorizar projetos reais, atuais e aplicáveis ao atual mercado.</p>
                             </div>
@@ -26,7 +30,7 @@ const Principios: React.FC<PrincipiosProps> = ({idioma}) => {
                         </div>
                         <div className="gap-2 rounded-md hover:scale-[1.1] hover:border border-gray-600/50 bg-gradient-to-b from-black from-0% to-[#083b36] to-100% w-[75%] sm:w-1/4 h-full p-4 flex flex-col items-center justify-center">
                             <div className="w-full  h-[90%] flex flex-col items-center gap-3">
-                                <img className="w-[50px]" src={`./assets/icons/brickwall.png`} alt="Ícone de uma pá de construção sobre uma pilha de tijolos." />
+                                <img className="w-[50px]" src={brickWallIcon} alt="Ícone de uma pá de construção sobre uma pilha de tijolos." />
                                 <h4 className="font-bold text-lg text-white">Foco nos Fundamentos</h4>
                                 <p className="text-sm">Estabelecer bases gerais para aprender skills específicas exigidas pelos empregadores.</p>
                             </div>
@@ -34,7 +38,7 @@ const Principios: React.FC<PrincipiosProps> = ({idioma}) => {
                         </div>
                         <div className="gap-2 rounded-md hover:scale-[1.1] hover:border border-gray-600/50 bg-[#141414] sm:mt-12 w-[75%] sm:w-1/4 h-full p-4 flex flex-col items-center justify-center">
                             <div className="w-full  h-[90%] flex flex-col items-center gap-3">
-                                <img className="w-[50px]" src={`./assets/icons/machine-learning.png`} alt="Ícone de um crânio com uma engrenagem no lugar do cérebro." />
+                                <img className="w-[50px]" src={machineLearningIcon} alt="Ícone de um crânio com uma engrenagem no lugar do cérebro." />
                                 <h4 className="font-bold text-lg text-white">Meta-Aprendizado</h4>
                                 <p className="text-sm">Aprender a aprender de maneira independente, ágil e eficaz.</p>
                             </div>
@@ -43,7 +47,7 @@ const Principios: React.FC<PrincipiosProps> = ({idioma}) => {
                         </div>
                         <div className="gap-2 rounded-md hover:scale-[1.1] hover:border border-gray-600/50 bg-gradient-to-b from-black from-0% to-[#083b36] to-100% w-[75%] sm:w-1/4 h-full p-4 flex flex-col items-center justify-center">
                             <div className="w-full  h-[90%] flex flex-col items-center gap-3">
-                                <img className="w-[50px]" src={`./assets/icons/idea.png`} alt="Ícone de uma lâmpada composta de peças de quebra-cabeça." />
+                                <img className="w-[50px]" src={ideaIcon} alt="Ícone de uma lâmpada composta de peças de quebra-cabeça." />
                                 <h4 className="font-bold text-lg text-white">Analista de Problemas</h4>
                                 <p className="text-sm">Resolver os problemas do cliente e/ou empregador acima de dominar tecnologia A ou B.</p>
                             </div>
@@ -62,7 +66,7 @@ const Principios: React.FC<PrincipiosProps> = ({idioma}) => {
                     <div className="flex flex-col sm:flex-row w-full max-w-[1024px] items-center sm:items-stretch gap-2 lg:gap-8">
                         <div className="gap-2 rounded-md hover:scale-[1.1] hover:border border-gray-600/50 bg-[#141414] sm:mt-12 w-[75%] sm:w-1/4 h-full p-4 flex flex-col items-center justify-center">
                             <div className="w-full  h-[90%] flex flex-col items-center gap-3">
-                                <img className="w-[50px]" src={`./assets/icons/iso.png`} alt="Icon of a medal with the letters 'ISO' written on it." />
+                                <img className="w-[50px]" src={isoIcon} alt="Icon of a medal with the letters 'ISO' written on it." />
                                 <h4 className="font-bold text-lg text-white">Industry Standards</h4>
                                 <p className="text-sm">"Prioritize real, current, and market-relevant projects.</p>
                             </div>
@@ -70,7 +74,7 @@ const Principios: React.FC<PrincipiosProps> = ({idioma}) => {
                         </div>
                         <div className="gap-2 rounded-md hover:scale-[1.1] hover:border border-gray-600/50 bg-gradient-to-b from-black from-0% to-[#083b36] to-100% w-[75%] sm:w-1/4 h-full p-4 flex flex-col items-center justify-center">
                             <div className="w-full  h-[90%] flex flex-col items-center gap-3">
-                                <img className="w-[50px]" src={`./assets/icons/brickwall.png`} alt="Icon of a construction shovel above a pile of bricks." />
+                                <img className="w-[50px]" src={brickWallIcon} alt="Icon of a construction shovel above a pile of bricks." />
                                 <h4 className="font-bold text-lg text-white">Fundamentals-Oriented</h4>
                                 <p className="text-sm">Stablish general foundations for learning the skills specifically required by employers.</p>
                             </div>
@@ -78,7 +82,7 @@ const Principios: React.FC<PrincipiosProps> = ({idioma}) => {
                         </div>
                         <div className="gap-2 rounded-md hover:scale-[1.1] hover:border border-gray-600/50 bg-[#141414] sm:mt-12 w-[75%] sm:w-1/4 h-full p-4 flex flex-col items-center justify-center">
                             <div className="w-full  h-[90%] flex flex-col items-center gap-3">
-                                <img className="w-[50px]" src={`./assets/icons/machine-learning.png`} alt="Icon of a cranium with a gear where the brain would be." />
+                                <img className="w-[50px]" src={machineLearningIcon} alt="Icon of a cranium with a gear where the brain would be." />
                                 <h4 className="font-bold text-lg text-white">Meta-Learning</h4>
                                 <p className="text-sm">Learn to learn in independent, agile and efficient fashion.</p>
                             </div>
@@ -87,7 +91,7 @@ const Principios: React.FC<PrincipiosProps> = ({idioma}) => {
                         </div>
                         <div className="gap-2 rounded-md hover:scale-[1.1] hover:border border-gray-600/50 bg-gradient-to-b from-black from-0% to-[#083b36] to-100% w-[75%] sm:w-1/4 h-full p-4 flex flex-col items-center justify-center">
                             <div className="w-full  h-[90%] flex flex-col items-center gap-3">
-                                <img className="w-[50px]" src={`./assets/icons/idea.png`} alt="Icon of lamp made out of puzzle pieces." />
+                                <img className="w-[50px]" src={ideaIcon} alt="Icon of lamp made out of puzzle pieces." />
                                 <h4 className="font-bold text-lg text-white">Problem Solver</h4>
                                 <p className="text-sm">Solve the client's/employer's problems above mastering technology A or B.</p>
                             </div>

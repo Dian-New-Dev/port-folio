@@ -1,4 +1,5 @@
 import React from "react";
+import meImg from '../assets/images/me.jpg'
 
 interface HeroProps {
     idioma: number;
@@ -25,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({idioma}) => {
                     </div>
     
                     <div id="foto" className="relative w-1/2 sm:w-[30%]">
-                        <img className="relative opacity-0 z-10 w-full h-full" src={`./assets/images/me.jpg`} alt="Foto minha, estilizada com um filtro de cor verde-claro." />
+                        <img className="relative opacity-0 z-10 w-full h-full" src={meImg} alt="Foto minha, estilizada com um filtro de cor verde-claro." />
                         <div className="absolute z-0 top-0 left-0 bg-blend-hero rounded-lg sombra-hero w-full h-full"></div>
                     </div>
                 </div>
@@ -48,7 +49,7 @@ const Hero: React.FC<HeroProps> = ({idioma}) => {
                     </div>
 
                     <div id="foto" className="relative w-1/2 sm:w-[30%]">
-                        <img className="relative opacity-0 z-10 w-full h-full" src={`./assets/images/me.jpg`} alt="Foto minha, estilizada com um filtro de cor verde-claro." />
+                        <img className="relative opacity-0 z-10 w-full h-full" src={meImg} alt="Foto minha, estilizada com um filtro de cor verde-claro." />
                         <div className="absolute z-0 top-0 left-0 bg-blend-hero rounded-lg sombra-hero w-full h-full"></div>
                     </div>
                 </div>
