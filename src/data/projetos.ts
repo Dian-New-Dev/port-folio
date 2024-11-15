@@ -14,7 +14,7 @@ const projetos:projetos[] = [
     {
         nome: 'Galeria de Landing Pages',
         descricao: 'Landing Page onde reúno links para todas as landing pages produzidas por mim.',
-        thumbnail: '../assets/thumbnails/lps.png',
+        thumbnail: '/assets/thumbnails/lps.png',
         categoria: 'Landing Page.',
         tecnologias: 'Vite, React, Tailwdind, Typescript.',
         status: 'Deployed.',
@@ -24,7 +24,7 @@ const projetos:projetos[] = [
     {
         nome: 'Infinita Tenebrae',
         descricao: 'Blog full-stack com temática cósmica.',
-        thumbnail: '../assets/thumbnails/infinita.png',
+        thumbnail: './assets/thumbnails/infinita.png',
         categoria: 'Web App',
         status: 'Deployed.',
         tecnologias: 'Vite, React, React Router, Tailwdind, Typescript, NodeJS, Express, MongoDB, Docker.',
@@ -34,7 +34,7 @@ const projetos:projetos[] = [
     {
         nome: 'O Vigésimo',
         descricao: 'Jogo de navegador.',
-        thumbnail: '../assets/thumbnails/vigesimo.png',
+        thumbnail: './assets/thumbnails/vigesimo.png',
         categoria: 'Web App',
         status: 'Deployed.',
         tecnologias: 'Vite, React, React Router, Tailwdind, Typescript, NodeJS, Express, MongoDB.',
