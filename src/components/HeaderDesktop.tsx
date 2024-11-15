@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
+import brasilIcon from '../assets/icons/brasil.png';
 
 interface HeaderDesktopProps {
     larguraDaTela: number;
@@ -85,7 +86,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela, idioma, se
 
                         <div className='flex gap-1'>
                             <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(0)}>
-                                <img className='rounded-lg w-[30px]' src={`./assets/icons/brasil.png`} alt="Botão com a bandeira do Brasil." />
+                                <img className='rounded-lg w-[30px]' src={brasilIcon} alt="Botão com a bandeira do Brasil." />
                             </button>
 
                             <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
@@ -132,7 +133,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ( {larguraDaTela, idioma, se
             <div className='z-10 relative w-3/4 flex gap-8 justify-end items-center'>
                         <div className='flex gap-1'>
                             <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(0)}>
-                                <img className='rounded-lg w-[30px]' src={`./assets/icons/brasil.png`} alt="Button with the Brazilian flag." />
+                                <img className='rounded-lg w-[30px]' src={brasilIcon} alt="Button with the Brazilian flag." />
                             </button>
 
                             <button className='opacity-50 hover:opacity-100' onClick={() => trocarIdioma(1)}>
