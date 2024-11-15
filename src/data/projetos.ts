@@ -1,3 +1,7 @@
+import lpThumbnail from '../assets/thumbnails/lps.png';
+import infinitaThumbnail from '../assets/thumbnails/infinita.png';
+import vigesimoThumbnail from '../assets/thumbnails/vigesimo.png';
+
 interface projetos {
     nome: string;
     descricao: string;
@@ -14,7 +18,7 @@ const projetos:projetos[] = [
     {
         nome: 'Galeria de Landing Pages',
         descricao: 'Landing Page onde reúno links para todas as landing pages produzidas por mim.',
-        thumbnail: '/assets/thumbnails/lps.png',
+        thumbnail: lpThumbnail,
         categoria: 'Landing Page.',
         tecnologias: 'Vite, React, Tailwdind, Typescript.',
         status: 'Deployed.',
@@ -24,7 +28,7 @@ const projetos:projetos[] = [
     {
         nome: 'Infinita Tenebrae',
         descricao: 'Blog full-stack com temática cósmica.',
-        thumbnail: './assets/thumbnails/infinita.png',
+        thumbnail: infinitaThumbnail,
         categoria: 'Web App',
         status: 'Deployed.',
         tecnologias: 'Vite, React, React Router, Tailwdind, Typescript, NodeJS, Express, MongoDB, Docker.',
@@ -34,7 +38,7 @@ const projetos:projetos[] = [
     {
         nome: 'O Vigésimo',
         descricao: 'Jogo de navegador.',
-        thumbnail: './assets/thumbnails/vigesimo.png',
+        thumbnail: vigesimoThumbnail,
         categoria: 'Web App',
         status: 'Deployed.',
         tecnologias: 'Vite, React, React Router, Tailwdind, Typescript, NodeJS, Express, MongoDB.',

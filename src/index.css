@@ -58,7 +58,7 @@ p {
 }
 
 .bg-blend-hero {
-    background-image: url('/assets/images/me.jpg');
+    background-image: url('./assets/images/me.jpg');
     background-size: cover;
     background-color: #1ac1b1;
     background-blend-mode: multiply;
@@ -95,7 +95,7 @@ p {
 }
 
 .codigo-bg {
-    background-image: url('/assets/images/codigo-bg.png');
+    background-image: url('./assets/images/codigo-bg.png');
     background-color: rgba(0, 0, 0, 0.575);
     background-blend-mode: multiply;
     background-position: -50% -150%;
