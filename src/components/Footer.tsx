@@ -1,4 +1,7 @@
 import React from "react";
+import wppIcon from '../assets/icons/whatsapp.png';
+import linkedinIcon from '../assets/icons/linkedin.png';
+import githibIcon from '../assets/icons/github.png'
 
 
 const Footer: React.FC = () => {
@@ -24,15 +27,15 @@ const Footer: React.FC = () => {
                 
                 <div className=" z-20 flex gap-2">
                     <a target="_blank" href="https://api.whatsapp.com/send?phone=5567991592199&text=Ol%C3%A1,%20seja%20bem%20vindo!%20Caso%20tenha%20interesse%20em%20adquirir%20uma%20Landing%20Page%20para%20o%20seu%20neg%C3%B3cio,%20ou%20tenha%20d%C3%BAvidas%20sobre%20meus%20servi%C3%A7os,%20sinta-se%20livre%20para%20mandar%20uma%20mensagem.%20Responderei%20o%20quanto%20antes!">
-                        <img className="rounded-lg border-2 border-[#1ac1b1] sombra-footer w-[40px]" src={`./assets/icons/whatsapp.png`} alt="Ícone do Whatsapp" />
+                        <img className="rounded-lg border-2 border-[#1ac1b1] sombra-footer w-[40px]" src={wppIcon} alt="Ícone do Whatsapp" />
                     </a>
                     
                     <a target="_blank "href="https://www.linkedin.com/in/diego-antunes-339648293/">
-                        <img className="rounded-lg border-2 border-[#1ac1b1] sombra-footer w-[40px]" src={`./assets/icons/linkedin.png`} alt="Ícone do Linkedin" />
+                        <img className="rounded-lg border-2 border-[#1ac1b1] sombra-footer w-[40px]" src={linkedinIcon} alt="Ícone do Linkedin" />
                     </a>
 
                     <a target="_blank" href="https://github.com/Dian-New-Dev">
-                        <img className="rounded-lg border-2 border-[#1ac1b1] sombra-footer w-[40px]" src={`./assets/icons/github.png`} alt="Ícone do Github" />
+                        <img className="rounded-lg border-2 border-[#1ac1b1] sombra-footer w-[40px]" src={githibIcon} alt="Ícone do Github" />
                     </a>
                 </div>
 
