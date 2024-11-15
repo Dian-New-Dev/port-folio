@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="z-10 relative text-white w-full h-full">
             <div className="z-20 relative w-full p-4 h-full flex flex-col items-center gap-2 footer-gradiente">
                 <div className={`z-20 w-full h-full flex justify-center text-[#1ac1b1]`}>
-                    <div id='logo-container' className='mb-[-30px] scale-[0.4] origin-center flex w-40 h-28'>
+                    <div id='logo-container' className='pointer-events-none mb-[-30px] scale-[0.4] origin-center flex w-40 h-28'>
                         <div className='w-full '>
                             <p className='acme-regular neon text-[120px] mt-[-33px]'>D</p>
                         </div>
