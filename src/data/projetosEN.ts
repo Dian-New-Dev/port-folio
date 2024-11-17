@@ -41,7 +41,7 @@ const projetosEN:projetosEN[] = [
         thumbnail: vigesimoThumbnail,
         categoria: 'Web App',
         status: 'Deployed.',
-        tecnologias: 'Vite, React, React Router, Tailwdind, Typescript, NodeJS, Express, MongoDB.',
+        tecnologias: 'Vite, React, Tailwdind, Typescript.',
         repositorio: 'https://github.com/Dian-New-Dev/Jogo-da-Memoria',
         link: 'https://dian-new-dev.github.io/Jogo-da-Memoria/'
     },
