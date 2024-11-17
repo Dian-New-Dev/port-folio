@@ -30,6 +30,58 @@ const FundoAnimado: React.FC = () => {
 
         
         <div className="relative w-full h-full overflow-hidden">
+
+            <div className="hidden z-10  absolute w-full h-full top-0 left-0 bg-black/[0.9]">
+            </div>
+
+            <div className="hidden z-0 absolute w-full h-full top-0 left-0 origin-center scale-[2] rotate-45">
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+                <div className="w-full h-[2%] bg-verde-animado"></div>
+                <div className="w-full h-[2%] bg-verde-animado2"></div>
+
+
+            </div>
+
+
                 <button className="hidden absolute z-50 text-white top-52" onClick={ligardesce}>Ligar</button>
                 
                 

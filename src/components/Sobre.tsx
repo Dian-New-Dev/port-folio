@@ -38,8 +38,7 @@ const Sobre: React.FC<SobreProps> = ({idioma}) => {
                                     Ex-docente universitário em Ciência Política, doutor em Ciência Política pela UFRGS.
                                 </p>
                                 <p className="leading-7 text-center">
-                                    Problemas de saúde me forçaram a abandonar o mundo acadêmico, desafio que abraço como oportunidade de buscar uma transição de carreira, rumo ao desenvolvimento web.
-                                </p>
+                                    Nutrindo gosto por tecnologia e impulsionado pelo desejo de superar desafios, busco atualmente transitar para o desenvolvimento web. Busco aproveitar minhas habilidades analíticas e minha ampla experiência na academia para criar soluções digitais eficientes.                                </p>
                             </div>
 
                             <div className="flex flex-col gap-2">
@@ -89,7 +88,7 @@ const Sobre: React.FC<SobreProps> = ({idioma}) => {
                                     Former Political Science college professor, Doctor in Political Science from Federal University of Rio Grande do Sul.
                                 </p>
                                 <p className="leading-7 text-center">
-                                    Health problems forced me to quit the academic world, challenge that I embrace as oportunitty to solidify a carreer transition into web development.
+                                    Driven by a passion for technology and the desire to embrace new challenges, I'm transitioning into web development. I'm committed to leveraging my analytical skills and extensive experience in academia to create efficient digital solutions.
                                 </p>
                             </div>
 

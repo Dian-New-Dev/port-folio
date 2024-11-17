@@ -230,3 +230,28 @@ p {
 
 }
 
+@keyframes bgVerdeAnimado {
+    0% {background-color: #1ac1b1}
+    50% {background-color: #083b36}
+    100% {background-color: #1ac1b1}
+}
+
+.bg-verde-animado {
+    animation-name: bgVerdeAnimado;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+
+}
+
+.bg-verde-animado2 {
+    animation-name: bgVerdeAnimado;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+
+}
+
