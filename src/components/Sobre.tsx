@@ -38,7 +38,7 @@ const Sobre: React.FC<SobreProps> = ({idioma}) => {
                                     Ex-docente universitário em Ciência Política, doutor em Ciência Política pela UFRGS.
                                 </p>
                                 <p className="leading-7 text-center">
-                                    Nutrindo gosto por tecnologia e impulsionado pelo desejo de superar desafios, busco atualmente transitar para o desenvolvimento web. Busco aproveitar minhas habilidades analíticas e minha ampla experiência na academia para criar soluções digitais eficientes.                                </p>
+                                    Nutrindo gosto por tecnologia e impulsionado pelo desejo de superar desafios, atualmente luto para transitar ao desenvolvimento web. Busco aproveitar minhas habilidades analíticas e minha ampla experiência na academia para criar soluções digitais eficientes.                                </p>
                             </div>
 
                             <div className="flex flex-col gap-2">
